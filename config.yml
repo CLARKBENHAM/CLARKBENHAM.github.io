@@ -1,0 +1,26 @@
+baseURL: http://clark.github.io
+languageCode: en-us
+title: Clark Benham blog
+theme: "PaperMod"
+params:
+    homeInfoParams:
+        title: Hello
+        content: >
+            <img style="padding-bottom:10px" src=/images/desert3.jpg>
+            Welcome to my research blog.
+
+    socialIcons:
+        - name: "github"
+          url: "https://github.com/CLARKBENHAM/"
+        - name: "twitter"
+          url: "https://https://twitter.com/ClarkBenham2"
+menu:
+    main:
+        - name: About
+          url: about
+          weight: 5
+markup:
+    goldmark:
+      renderer:
+        unsafe: true
+
