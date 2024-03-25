@@ -1,6 +1,6 @@
 ---
-title: "Testing: Lotes on ladr"
-date: 2024-03-22T13:46:24-07:00
+title: "Notes on Linear Algebra Done Right"
+date: 2024-03-25T13:46:24-07:00
 draft: True
 mathjax: true
 ---
@@ -12,23 +12,32 @@ mathjax: true
 				keep applying operators multiple times
 				use the same vector twice
 				u=u-a*v + a*v. For what 'a' does this help you?
-				try swapping <u1,v1> to <v1,u1>
-				(T-λI) is a null operator if you only look at it acting on the eigenvectors of λ.
-				With generalized eigenspaces there's a lot of T^(i-1)T^i counting arguments
+				try swapping the order:
+					for operators ST to TS
+					<u1,v1> to <v1,u1>
 
 			Others
 				Represent complex numbers as matrix with a+ib=[[a,b], [-b,a]]
 				define the new operator/poly as a tweak of the old operator/poly
 				summing everything if that's how I can ‘use’ a constraint
 				create a subspace <v,T(V),..> where a constraint isn’t true.
-
-			Read all the theorems in the subchapter, think about which to apply and apply it
-				if use the techniques of the proofs in the chapter, was trivial
-				When I tried to just do problems via geometry and process for matricies much harder
+				(T-λI) is a null operator if you only look at it acting on the eigenvectors of λ.
+				With generalized eigenspaces there's a lot of T^(i-1)T^i counting arguments, understanding how it acts on each direct sum
 
 		The questions are all "easy", but need to check carefully for sublties
-			Do every 3rd problem, to make it harder. Eg. normalay problems 8,9,10 are all related and 10 is hard on it's own but easy if you've got the prevous 2 conditions.
+			Having a solutions manual to compare to was great: 1. Just "proving" theorems isn't enough. If I've written a proof I assume it's correct, so it's good to catch exactly what I missed.  2. I learned how to write clenaer proof's.
+				Solution sources:  https://linearalgebras.com/8b.html, https://github.com/jubnoske08/linear_algebra, https://github.com/celiopassos/linear-algebra-done-right-solutions
+				Having good solutions will be a big factor in which textbooks I chose going forward.
+
+			My processes was to Read all the theorems in the subchapter, think about which to apply and apply it
+				if use the techniques of the proofs in the chapter, most of the problems are trivial
+				When I tried to just do problems via geometry and extend the processes as if I was acting on matricies it was much harder
+
+			Do every 3rd problem, to make it harder. Eg. normallay problems 8,9,10 are all related and 10 is hard on it's own but easy if you've got the prevous 2 conditions.
+
 			Otherwise if you do every problem sequentially then they're almost all 1 step proofs. There's 1 thing to figure out and then you're done.
+				eg. k
+
 		Wish I had harder problems to check this isn't a shallow correlation.
 
 		hardest part is when I mis-remembered something I'd learned previously.

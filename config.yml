@@ -1,13 +1,12 @@
-baseURL: http://clark.github.io
+baseURL: https://home
 languageCode: en-us
 title: Clark Benham blog
 theme: "PaperMod"
 params:
     homeInfoParams:
-        title: Hello
-        content: >
-            <img style="padding-bottom:10px" src=/images/desert3.jpg>
-            Welcome to my research blog.
+        title:
+        content: |
+          <img src="images/screwtape_pleasures.jpg">
 
     socialIcons:
         - name: "github"
