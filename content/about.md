@@ -5,7 +5,7 @@
 
 ## Clark Benham
 
-[Email](mailto:clark.benham@gmail.com)
+[Email](mailto:$FirstName.$LastName@gmail.com)
 
 
 
