@@ -30,8 +30,15 @@ mathjax: true
 		Only on last layer of Model
 		Where the previous classification output was correct, is it still correct?
 			asking: does it preserve the argmax of output vector, but biased since correct answers more likely to have large seperation.
-			For a general matrix multiplication you're concerned with the magnitude of all outputs remaining similar.
 			TODO: check correlation of error with absolute seperation
+			For a general matrix multiplication you're concerned with the magnitude of all outputs remaining similar.
+				But Mirsky showed that SVD minimizes any reconstruction Norm that's the result of a Unitary Transform.
+				The Frobenious norm is a unitary transformation of the spectral norm.
+				Here we're trying not to change the vector associated with the old maximum Singular Value.
+					We can change the spectral norm, eg. outputing [2,1,1] instead of [4,2,2] would still be correct for classification.
+					But we could keep the spectral norm and be incorrect, outputing [2,2,4]
+				So this is problem unitarily equivalent to the frobenious norm?
+
 		Only on test set? (Double check accuracy numbers)
 
 		Works best when: For matricies X (N,D) and Q (D,m) Mithral is optimized for  N > D,M. It also works better when X changes and Q is fixed
