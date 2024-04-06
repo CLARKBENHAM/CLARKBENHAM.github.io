@@ -12,7 +12,7 @@ params:
         - name: "github"
           url: "https://github.com/CLARKBENHAM/"
         - name: "twitter"
-          url: "https://https://twitter.com/ClarkBenham2"
+          url: "https://twitter.com/ClarkBenham2"
 menu:
     main:
         - name: About
