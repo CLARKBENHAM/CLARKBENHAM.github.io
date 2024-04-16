@@ -132,18 +132,20 @@ Going back to the warning: the Change of basis Q under 1 definition isn't an inv
 To conclude: to think  about change of basis think of how to convert the representation of a fixed vector as you change the units. Don't memorize formulas.
 
 # Most Interesting things learned:
-Reisz Representation Theorem was by far the coolest:
+
+Using Orthonormal Projection to find approximations, even in the space of functions was the coolest. I'll let Axler speak, it's mindblowing.
+<img src="/images/axler_ch6c_minimization_pt1.jpg">
+<img src="/images/axler_ch6c_minimization_pt2.jpg">
+
+Reisz Representation Theorem was the 2nd coolest:
 	Every finite dimensional linear function φ: V->f has a vector w such that φ(v) = <v,w>.
 	This seems a little obvious if you're only imagining functionals as "rulers" on a specific basis: given a vector you decide how much each component should could and then sum the entries weighted by your functional. eg. thinking of φ in R^3 as φ([1,2,3]) = f(1) + g(2) + h(3) linear functions f,g,h that map 0 to 0 can only be expressed as a*1 + b*2 + c*3. That's clearly a multiplication with another vector in R^3.
 	But when <> represents integration from 0 to 1 with the product of cosine and V is Polynomials up to degree 5, that's crazy.
 
-Is this Reisz or orthonormal projection?
-	This lets you say that every integral is the product of with another poly!
-	eg. Find the closest approximation of cos using 5 degree polys
-
-Solving the Fibonacii sequence was the 2nd coolest part.
+You can solve the Fibonacii sequence via expressing it as a linear operator, taking the eigenvalues, then computing the exponent in log multiplications by representing the multiplications in binary.
 
 Every operator can be expressed by polar decomposition, and there's an extension to linear maps.
+	Explains why a transpose can make sense as an approximation for the inverse, if all eigenvalues aobut 1.
 Can rotate Every operator so that any vector v is mapped to at most 2D subspace, and these 2D subspaces have at most 2 1-D subspaces overlap.
 	Every Normal complex or Self Adjoint (hermitan, symetric if real) real matrix is diagonizable
 	Every Complex matrix is Jordan diagonizable
