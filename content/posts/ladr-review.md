@@ -146,11 +146,13 @@ You can solve the Fibonacii sequence via expressing it as a linear operator, tak
 
 Every operator can be expressed by polar decomposition, and there's an extension to linear maps.
 	Explains why a transpose can make sense as an approximation for the inverse, if all eigenvalues about 1.
+
 Can rotate Every operator so that any vector v is mapped to at most 2D subspace, and these 2D subspaces have at most 2 1-D subspaces overlap.
 	Every Normal complex or Self Adjoint (Hermitian, symmetric if real) real matrix is diagonalizable
 	Every Complex matrix is Jordan diagonalizable
 	Ever real matrix has a complexification that is diagonalizable, which means can be expressed in blocks of [[a,-b], [b,a]] with b > 0
 Every matrix is diagonalizable if you represent it with different input and output basises
+
 Every matrix in C/with basis of eigenvectors is can be represented as a diagonal matrix, but since eigenvectors aren't orthogonal, it's not 'diagonalizable".
 	np.diag(eigenvalues) = eigenvectors ^-1 @ A @ eigenvectors
 
