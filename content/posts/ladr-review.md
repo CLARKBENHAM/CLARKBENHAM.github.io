@@ -195,8 +195,9 @@ My processes was to read all the theorems in the subchapter, think about which t
 		When I used the techniques of the proofs in the chapter, most of the problems are trivial.
 		But it was much harder when I used techniques I'd been more exposed to in the past: sums over elements, geometry of operations, and extending the processes as if I was acting on matrices.
 
-I made it harder by doing every 3rd problem without even looking at the previous two problem statements. If the book is easy because you only have to make 1 logical inference at at a time then skipping problems makes you have to chain together inferences.
+I made it harder by going through and doing every 3rd problem without even looking at the previous two problem statements. If the book is easy because you only have to make 1 logical inference at at a time then skipping problems makes you have to chain together inferences.
 	eg. Normally problems 8,9,10 are all related, and 10 is hard on it's own. It takes 2 logical inference to solve 10 based on what you know. But if you see the problem statement for 8 and 9 now you have a path to prove 10; problems 8 and 9 provide 1 of the logical inferences you need to solve 10. Once you've assumed 8 and 9 are true then you only have 1 more inference to make.
+	I did end up doing every problem. There's a compounding effect: as you do more you get so by the end I had an intuitive understanding of all the objects I could think of the proof in about as long as it took to write.
 
 
 There are a few ideas and you just keep applying them.
