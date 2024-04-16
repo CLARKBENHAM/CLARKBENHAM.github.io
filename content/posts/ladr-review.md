@@ -6,10 +6,10 @@ mathjax: True
 ---
 
 # Change of Basis
-The major oversight of the book was what I thought a lack of focus on change of basis. This is the best way to understand matrix similarity in general and what Product Quantiation[https://www.pinecone.io/learn/series/faiss/product-quantization/] does in particular. I'll go over the idea of basis in the abstract and then give a concrete example.
+The major oversight of the book was what I thought a lack of focus on change of basis. This is the best way to understand matrix similarity in general and what Product Quantization[https://www.pinecone.io/learn/series/faiss/product-quantization/] does in particular. I'll go over the idea of basis in the abstract and then give a concrete example.
 
 ### Basis to Representation in the Abstract
-Not all vector spaces represent numbers along a set of dimensions, nor operators are represent coefficent multiplication on the underlying variables. If your vector space is a set of functions (eg. {1,x,x^2, cos(x), sin(x), e^2x}) then the map T defined by  Differentiation on each element is an operator:
+Not all vector spaces represent numbers along a set of dimensions, nor operators are represent coefficient multiplication on the underlying variables. If your vector space is a set of functions (eg. {1,x,x^2, cos(x), sin(x), e^2x}) then the map T defined by  Differentiation on each element is an operator:
 
 	For T(v) = d/dx v and v=[1,1,1,1,1,1] in the basis above
 	Then T([1,1,1,1,1,1])
@@ -21,7 +21,7 @@ Not all vector spaces represent numbers along a set of dimensions, nor operators
 	= [1,2,0,1,-1, 2] the point in function space represented in the original basis
 
 This is an example of how you can compute the derivative of any elementary function by matrix multiplication; as long as you restrict yourself to a finite collection of elementary functions.
-	By [Liouvile's Theorem](https://en.wikipedia.org/wiki/Liouville%27s_theorem_(differential_algebra)) Differentiation on an elementary function produces another elementary function. So differentitation is a linear Operator on the space of elementary functions.
+	By [Liouville's Theorem](https://en.wikipedia.org/wiki/Liouville%27s_theorem_(differential_algebra)) Differentiation on an elementary function produces another elementary function. So differentiation is a linear Operator on the space of elementary functions.
 It also shows how an underlying object can have a different representations: `f(x) = 1 + x + x^2 + cos(x) + sin(x) + e^2x` "is" `[1,1,1,1,1,1]`. Anything you say about vector spaces is true for f(x).
 
 ### Change of Basis The concrete example.
@@ -74,7 +74,7 @@ T_imperial and T_overseas are equivalent in terms of mapping physical people to 
 #### Notes on Change of basis:
 It's slightly more complicated: the basises don't have to be just a re-scaling (eg. meters to inches) but could also include a rotation. Instead of measuring height and weight we could measure height and BMI. All the information is still there but now the basis isn't orthogonal. You would still use the same formula to convert between basises.
 
-Secondly, The "change of basis" matrix Q can refer to 2 different things, and notation isn't always concistent. You change the representation [1,0,0] in basis 1 to the representation [1,0,0] in basis 2, in which the representation is the same but the underlying vector has changed. Or you can convert the representation [1,0,0] in Basis 1 to whatever represents the same underlying vector in Basis 2; now the representation has changed but the vectors the same.
+Secondly, The "change of basis" matrix Q can refer to 2 different things, and notation isn't always consistent. You change the representation [1,0,0] in basis 1 to the representation [1,0,0] in basis 2, in which the representation is the same but the underlying vector has changed. Or you can convert the representation [1,0,0] in Basis 1 to whatever represents the same underlying vector in Basis 2; now the representation has changed but the vectors the same.
 
 For example: when I converted inches (basis 1) to meters (basis 2) with Q_in2met I converted the basis
 ```
@@ -113,9 +113,9 @@ The Change of basis matrix Q that represents this change is
 
 ###### More confusion
 In the first case I'm mapping a representation in terms of B1 to a representation in terms of B2. In the 2nd I'm mapping a basis vector of B1 to a basis vector B2.
-As a formula: `v_b2=Q@v_b1` maps the same vector to new representation and `B_2=Q@B_1` maps between basis vectors. The represesentation is the same but vector changes.
+As a formula: `v_b2=Q@v_b1` maps the same vector to new representation and `B_2=Q@B_1` maps between basis vectors. The representation is the same but vector changes.
  If I wanted to convert meters to inches I'd multiply by Q2 (the inverse of Q_in2met), but for inches to meters I'd multiply by the inverse of Q2 (just Q_in2met).
-WARNING: you can define the representation of a basis in 2 ways that are inverses of each other here because we're converting back to the standard basis and the matricies commute here. However if we were changing between 2 non-simultanesouly diagonalized basises then the change of basis matrix under both defintitions would NOT be inverses.
+WARNING: you can define the representation of a basis in 2 ways that are inverses of each other here because we're converting back to the standard basis and the matrices commute here. However if we were changing between 2 non-simultaneously diagonalized basises then the change of basis matrix under both definitions would NOT be inverses.
 
 Why is defining a basis based on how it changes the old basis it the inverse of defining a basis based on how the representation changes? Let's imagine we start with a basis of "pure" units {e1,e2,e3}. We pick 3 vectors for B1 and write them down as [v1,v2,v3]. *The matrix representation of B1 is the operation that converts e1 to v1, e2 to v2, and e3 to v3 all in terms of [e1,e2,e3]*. This is what it means to write `v1` as [a,b,c]: v1=a*e1+b*e2 +c*e3. Every matrix is equivalent to an operation, and if we want to go back to our pure basis then we'd run the operation in reverse (i.e. multiply by the inverse of the matrix representation of B1).
 
@@ -126,14 +126,14 @@ To convert from v in terms of B1 to in terms of B2 is: B_2^-1 @ B_1. For v in te
 
 To convert the matrix B1 to be B2 by B_2 = Q@B_1 you'd multiply by Q=B_2 @ B_1^-1.
 
-Going back to the warning: the Change of basis Q under 1 definition isn't an inverse of Q under the other defintion. It's the terms that make up Q that have flipped. You've defined B1 as changing representation of vectors (standard) which is the inverse of mapping a basis vector to a new basis vector (less common). The same is true second basis B2; but Q=B_2 @ B_1^-1 then Q^-1 = B_1 @ B_2^-1 not B_2^-1 @ B_1.
+Going back to the warning: the Change of basis Q under 1 definition isn't an inverse of Q under the other definition. It's the terms that make up Q that have flipped. You've defined B1 as changing representation of vectors (standard) which is the inverse of mapping a basis vector to a new basis vector (less common). The same is true second basis B2; but Q=B_2 @ B_1^-1 then Q^-1 = B_1 @ B_2^-1 not B_2^-1 @ B_1.
 
 
 To conclude: to think  about change of basis think of how to convert the representation of a fixed vector as you change the units. Don't memorize formulas.
 
 # Most Interesting things learned:
 
-Using Orthonormal Projection to find approximations, even in the space of functions was the coolest. I'll let Axler speak, it's mindblowing.
+Using Orthonormal Projection to find approximations, even in the space of functions was the coolest. I'll let Axler speak, it's mind blowing.
 <img src="/images/axler_ch6c_minimization_pt1.jpg">
 <img src="/images/axler_ch6c_minimization_pt2.jpg">
 
@@ -145,13 +145,13 @@ Reisz Representation Theorem was the 2nd coolest:
 You can solve the Fibonacii sequence via expressing it as a linear operator, taking the eigenvalues, then computing the exponent in log multiplications by representing the multiplications in binary.
 
 Every operator can be expressed by polar decomposition, and there's an extension to linear maps.
-	Explains why a transpose can make sense as an approximation for the inverse, if all eigenvalues aobut 1.
+	Explains why a transpose can make sense as an approximation for the inverse, if all eigenvalues about 1.
 Can rotate Every operator so that any vector v is mapped to at most 2D subspace, and these 2D subspaces have at most 2 1-D subspaces overlap.
-	Every Normal complex or Self Adjoint (hermitan, symetric if real) real matrix is diagonizable
-	Every Complex matrix is Jordan diagonizable
-	Ever real matrix has a complexification that is diagonizable, which means can be expressed in blocks of [[a,-b], [b,a]] with b > 0
-Every matrix is diagonizable if you represent it with different input and output basises
-Every matrix in C/with basis of eigenvectors is can be represented as a diagonal matrix, but since eigenvectors aren't orthogonal, it's not 'diagonizable".
+	Every Normal complex or Self Adjoint (Hermitian, symmetric if real) real matrix is diagonalizable
+	Every Complex matrix is Jordan diagonalizable
+	Ever real matrix has a complexification that is diagonalizable, which means can be expressed in blocks of [[a,-b], [b,a]] with b > 0
+Every matrix is diagonalizable if you represent it with different input and output basises
+Every matrix in C/with basis of eigenvectors is can be represented as a diagonal matrix, but since eigenvectors aren't orthogonal, it's not 'diagonalizable".
 	np.diag(eigenvalues) = eigenvectors ^-1 @ A @ eigenvectors
 
 # Concepts Not Covered
@@ -161,28 +161,28 @@ Every matrix in C/with basis of eigenvectors is can be represented as a diagonal
 2. Regression:
 The geometric perspective of regression as projecting points was useful to me:
 
-		matrix X is N rows/datapoints and P predictors
+		matrix X is N rows/data-points and P predictors
 		matrix Y is N rows, a point
-		B is all possible predictors/coefficents
-		β is best predictor/coefficents
+		B is all possible predictors/coefficients
+		β is best predictor/coefficients
 
 		In Y's space of dimension N, we want to find the vector in the P dimensional hyperplane that is closest to point Y.
 
-		It's a P-d hyperplane because X@B has P coefficents in B, and those coefficents can take any values.
+		It's a P-d hyperplane because X@B has P coefficients in B, and those coefficients can take any values.
 
 		The distance from plane X@B to point Y is minimized when the projection of Y onto vector X@β is orthogonal to vector X@β. (That is the error vector vector should go from Y to the tip of X@β)
 
 		Orthogonal when X.T@(Y-X@β)=0 implies β = (X.T@X)^-1@X.T@Y
-Alternativly you want to solve y=Xβ. You can't do X^-1Y=β since X might not be invertible. Instead multiply by X.T, and for every full rank matarix X, X.T@X is invertible you can now invert that. This is an example of the trick "apply the thing to itself".
+Alternatively you want to solve y=Xβ. You can't do X^-1Y=β since X might not be invertible. Instead multiply by X.T, and for every full rank matrix X, X.T@X is invertible you can now invert that. This is an example of the trick "apply the thing to itself".
 `X.T@y = X.T@x@β -> (X.T@X)^-1 @ X.Ty = β`
 
 3. SVD minimizes all norms that are invariant under unitary [transformations](https://stats.stackexchange.com/questions/130721/what-norm-of-the-reconstruction-error-is-minimized-by-the-low-rank-approximation) by Eckart-Young-Mirsky theorem.
 4. More Practical matters such as:
-	4a. High dimension vectors are almost always [nearly orthogonal](https://math.stackexchange.com/questions/995623/why-are-randomly-drawn-vectors-nearly-perpendicular-in-high-dimensions) and can be efficently embedded in a [lower dimension](https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma)
+	4a. High dimension vectors are almost always [nearly orthogonal](https://math.stackexchange.com/questions/995623/why-are-randomly-drawn-vectors-nearly-perpendicular-in-high-dimensions) and can be efficiently embedded in a [lower dimension](https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma)
 	4b. PCA
 
-# Solving the Excersies
-The questions are all "easy", as long as you look over the theorems, but need to check carefully for every sublty.
+# Solving the Exercises
+The questions are all "easy", as long as you look over the theorems, but need to check carefully for every subtlety.
 	Having a solutions manual to compare to was great: 1. Just "proving" theorems isn't enough. If I've written a proof I assume it's correct, so it's good to catch exactly what I missed.  2. I learned how to write cleaner proof's and with new techniques.
 		Solution sources:  https://linearalgebras.com, https://github.com/jubnoske08/linear_algebra, https://github.com/celiopassos/linear-algebra-done-right-solutions
 		Having good solutions will be a big factor in which textbooks I chose going forward.
@@ -191,10 +191,10 @@ If you do every problem sequentially then they're almost all 1 step proofs. Ther
 
 My processes was to read all the theorems in the subchapter, think about which theorem to apply and apply it. Then search for a geometric intuition of any new objects.
 		When I used the techniques of the proofs in the chapter, most of the problems are trivial.
-		But it was much harder when I used techniques I'd been more exposed to in the past: sums over elements, geometry of operations, and extending the processes as if I was acting on matricies.
+		But it was much harder when I used techniques I'd been more exposed to in the past: sums over elements, geometry of operations, and extending the processes as if I was acting on matrices.
 
 I made it harder by doing every 3rd problem without even looking at the previous two problem statements. If the book is easy because you only have to make 1 logical inference at at a time then skipping problems makes you have to chain together inferences.
-	eg. Normalay problems 8,9,10 are all related, and 10 is hard on it's own. It takes 2 logical inference to solve 10 based on what you know. But if you see the problem statement for 8 and 9 now you have a path to prove 10; problems 8 and 9 provide 1 of the logical inferences you need to solve 10. Once you've assumed 8 and 9 are true then you only have 1 more inference to make.
+	eg. Normally problems 8,9,10 are all related, and 10 is hard on it's own. It takes 2 logical inference to solve 10 based on what you know. But if you see the problem statement for 8 and 9 now you have a path to prove 10; problems 8 and 9 provide 1 of the logical inferences you need to solve 10. Once you've assumed 8 and 9 are true then you only have 1 more inference to make.
 
 
 There are a few ideas and you just keep applying them.
@@ -220,7 +220,7 @@ The Hardest part is when I mis-remembered something I'd learned previously.
 1. eg. Min Poly/Char poly can't categorize matrix, since the jordan blocks for the same eigenvalue could be different. eg dim=4, only λ=1. Could have 2 2d jordan blocks or 1 4d block or 4 1d blocks.
 2. Gaussian elimination changes determinant by product. (But it's an easier way to find determinant: you remember the operations you've performed and then multiply the final determinate of either 1 or 0 by all the changes you had to make)
 3. SVD sometimes changes which letter "S" represents across authors.
-4. "orthogonal" matricies are composed of orthonormal vectors.
+4. "orthogonal" matrices are composed of orthonormal vectors.
 
 But Overall I wish had harder problems to check I'm not only learning shallow correlations. If I only get stuck when something I memorized conflicts with something else then it shows I'm memorizing surface level attributes and not the structure.
-I also wish I had more practice at finding and extending analogies. eg if Normal matricies are Z, what do non-normal matricies corespond to?
+I also wish I had more practice at finding and extending analogies. eg if Normal matrices are Z, what do non-normal matrices correspond to?
