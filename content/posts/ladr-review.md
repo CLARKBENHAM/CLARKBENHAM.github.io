@@ -6,7 +6,7 @@ mathjax: True
 ---
 
 # Change of Basis
-The major oversight of the book was what I thought a lack of focus on change of basis. This is the best way to understand matrix similarity in general and what Product Quantization[https://www.pinecone.io/learn/series/faiss/product-quantization/] does in particular. I'll go over the idea of basis in the abstract and then give a concrete example.
+The major oversight of the book was what I thought a lack of focus on change of basis. This is the best way to understand matrix similarity in general and what PCA, SVD, and Product Quantization[https://www.pinecone.io/learn/series/faiss/product-quantization/] do in particular. I'll go over the idea of basis in the abstract and then give a concrete example.
 
 ### Basis to Representation in the Abstract
 Not all vector spaces represent numbers along a set of dimensions, nor operators are represent coefficient multiplication on the underlying variables. If your vector space is a set of functions (eg. {1,x,x^2, cos(x), sin(x), e^2x}) then the map T defined by  Differentiation on each element is an operator:
