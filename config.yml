@@ -1,6 +1,6 @@
 baseURL: https://CLARKBENHSM.github.io
 languageCode: en-us
-title: Clark Benham, an introduction to
+title: Clark Benham, introduction to
 theme: "PaperMod"
 params:
     homeInfoParams:
