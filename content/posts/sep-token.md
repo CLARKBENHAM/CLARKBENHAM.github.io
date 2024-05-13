@@ -18,3 +18,12 @@ mathjax: true
 		sometimes fools models, extract major points from earlier summaries
 
 		Also cosine distance from embedding models can be another filtering step
+
+Learning from Sep Token:
+	adding columns not a good way to add Y data, just prefer to create new rows and filter which rows use later.
+		eg. if want to compare Y_1,...,Y_n, vs. X, don't make n columns "Y_i". Have columns "X", "Y_type", "Y_value" and filter on Y_value.
+	Or going "backward" was a mistake vs. trying to recreate data and munge it together again?
+	Model runs I couldn't afford to abandon while not planning adequatly was real issue
+
+
+
