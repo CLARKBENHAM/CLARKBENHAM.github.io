@@ -167,7 +167,8 @@ mathjax: True
 - Small Tests: single dimension at a time not hypercube
 - Don't care about absolute performance, only relative to otherwise identical system. So don't worry about data quality as long as it is what they do.
 - Standardized workflows (e.g., weights & biases, bash script starting python code)
-	- forces separation of config code and implementation code
+	- forces separation of config code and implementation code (a tip first from
+@quantian)
 	- easy review of results
 	- include hash of config file
 - Accept negative results earlier: "5 days work closed 7% of the gap so current approach insufficient"
