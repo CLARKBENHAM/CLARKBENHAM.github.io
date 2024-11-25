@@ -1,6 +1,6 @@
 ---
-title: "[Draft] Koans on Circuit Breaker Results (linkpost)"
-date: 2024-10
+title: "Koans on Circuit Breaker Results"
+date: 2024-11
 draft: False
 mathjax: True
 ---
@@ -38,24 +38,24 @@ mathjax: True
 - Optimization: Average embeddings across token locations for efficiency
 - Probe averaging techniques
 - Linear probes (logistic regression) provide computational benefits
-- Adversarial training loop: attack against all previous probes and predictions, then probe train against all previous attack text.
+- Adversarial training loop: gradient descent attack against all previous probes and predictions to create new attack text with softprompts. Then train new probe against cumulative attack text.
 - Loss: attack is bad plus Log entropy of probe predictions
 
 ## 3. Technical Implementation
 
 ### 3.1 Dataset Selection
 - Need for meaningful harmful vs. non-harmful distinctions. Model must use it's own intelligence to cause harm, not repeat back what user said.
-- dataset quality: should be toughest epsilon % of real distribution.
+- Dataset quality: should be toughest epsilon % of real distribution.
 - Random ChatGPT queries from HarmBench and WildChat
-- Testing methodology focused on bad outputs where model failed to self-censor
-- Aside: test set duplication and mis-labeling acceptable. Multiple completions for similar prompts or incorrect labels maintained for comparison. Real life long tail not as applicable if have hard test set.
+- Aside: test set duplication and mis-labeling is acceptable. Multiple completions for similar prompts or incorrect labels maintained for comparison with other methods. We don't care about absolute performance only relative difference across other authors or our ablations. Real life long tail not as applicable if have hard test set.
 
 ### 3.2 Loss Measurement Design
 - Goal: Accurately identify if output bad, have gradient, be fast
-- Used KL divergence between original and new predictions at each index.
-- Limitations of alternative loss functions:
+- Used KL divergence between original and new predictions at each index of completed prompt.
+	-	Single forward pass no generation to evaluate. input=[Softprompt, Original Text Prompt, Models original generation], loss=KL(original_generation_tokens, new_generation_log_probs)
+- Limitations of alternative loss functions (see section 4):
   - Why simple classification losses fail (incorrect or attacker just fools grader)
-  - Challenges with direct output comparison (full generation vs 1 pass slower)
+  - Challenges with direct output comparison (full generation vs 1 pass slower; again have to align on rules)
   - Need for balanced detection vs false positives
 
 ### 3.3 Attack Space Definition
@@ -64,7 +64,8 @@ mathjax: True
   - Better gradient information
   - More manageable optimization space
   - Linear combinations of token embeddings
-  - Theoretical equivalence between token prefix sequences and soft prompt prefixes
+  - Assumed equivalence between token prefix sequences and soft prompt prefixes
+		- There's some 1k token prefix sequence that has numeric impact similar to the 5 token softprompt selected
 - Implementation details:
   - Limited to 5 insertion locations
   - Embedding size considerations
@@ -111,7 +112,7 @@ mathjax: True
 	- Better features for probe
 	- New loss function trains good classifier
 	- Didn't investigate:
-		- Destroying activations easier than of classifying
+		- Destroying activations easier than classifying
 		- Just trained a full model and probe simultaneously
 		- Forward pass: Passing information from earlier layers to help make later predictions
 		- Forward pass: Passing information from earlier layers, plus the processing model does on that information at intermediate step, to help make later predictions
@@ -127,21 +128,23 @@ mathjax: True
 		- That test set isn't correlated (eg. all bad cases in german )
 			- Finetune Bert to solve task
 			- Finetune OAI text model to label "bad" or "good"
-				- OAI doesn't let you upload csv of bad text even with obfuscation[https://clarkbenham.github.io/posts/red-team-summary/]
-	- That not Extra Compute
+				- OAI doesn't let you upload csv of bad text even with obfuscation anymore[https://clarkbenham.github.io/posts/red-team-summary/]
+	- Not from Extra Compute
 		- LoRA train with full LoRA parameter sweep
 			- LoRA parameters that matter: r, lora_alpha, lora_dropout
-			- batch size, learning rate. Not LR scheduler, weight decay. Only try 1 long run to see how many epochs need for good result and then keep fixed.
+			- batch size, learning rate. Not LR scheduler, weight decay. Only try 1 long run to see how many epochs need for good result and then use that fixed number of epochs.
 		- Finetune full model
-	- Not better features:
+	- Not from Better Features:
 		- Train probes on CB model (was partially true)
 		- Train probes on CB and see how generalize to base model (generalize better)
-		- Manual Feature engineering
+		- Manual Feature engineering:
+			-	adding norm of activations and binary variables for is greater than xth percentile
 		- Use larger model for probes
 
 ### 5.2 Circuit Breakers Comparison Results
 - https://docs.google.com/spreadsheets/d/1KuAl6b1zKRHjytQdW4Es9u1pzZ3VGqcKlxnwPvSxpb4/edit?gid=2023353007#gid=2023353007
 	- Plots to match table 2 of Circuit Breaker Paper.
+	- Only test on the NSFW cases the model original answered, but adjust the change in rates by (1-FN) to get original numbers
 - LoRA-trained classifier achieved similar performance
 - Probes can be effectively stacked with Circuit Breakers
 - Standard probes with features slightly underperformed
@@ -155,7 +158,7 @@ mathjax: True
 ## 6. Development Best Practices & Lessons Learned
 ### 6.1 Technical Challenges
 - Too many unit tests, not ideal for ML workflow
-- Challenges with Ray implementation editing imported files during development
+- Challenges with Ray: editing files Ray imports in distributed runs will the change file on next run: Ray is in separate processes.
 - Installing Nvidia drivers: also need fabric for Multi-GPU
 
 ### 6.2 Methodology Recommendations
@@ -164,7 +167,7 @@ mathjax: True
 - Small Tests: single dimension at a time not hypercube
 - Don't care about absolute performance, only relative to otherwise identical system. So don't worry about data quality as long as it is what they do.
 - Standardized workflows (e.g., weights & biases, bash script starting python code)
-	- forces seperation of config code and implementation code
+	- forces separation of config code and implementation code
 	- easy review of results
 	- include hash of config file
 - Accept negative results earlier: "5 days work closed 7% of the gap so current approach insufficient"
