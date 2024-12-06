@@ -1,10 +1,12 @@
 ---
-title: "Exploratory Red Teaming Results (linkpost)"
+title: "OAI Exploratory Red Teaming Results (linkpost)"
 date: 2024-03
 draft: False
 mathjax: True
 ---
 See https://github.com/CLARKBENHAM/sep_finetune_llm/blob/main/README.md for updated results
+
+This details flaws found with harmful llm completions, finetuning filtering (a few examples can caused models to generate NSFW), moderation endpoint accuracy, and a metric for cheaply filtering datasets of harmful examples for cases most confusing to the model.
 
 
 # Seperator Tokens Feb 27,2024

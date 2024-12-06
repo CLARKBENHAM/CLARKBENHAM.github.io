@@ -2,7 +2,7 @@
 ---
 title: "[koans] Mithral: Usefully Faster Matrix Mults by Approximation?"
 date: 2024-03-25T13:46:24-07:00
-draft: True
+draft: False
 mathjax: true
 ---
 
