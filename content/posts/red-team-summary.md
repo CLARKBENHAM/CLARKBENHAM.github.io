@@ -1,6 +1,6 @@
 ---
-title: "OAI Exploratory Red Teaming Results (linkpost)"
-date: 2024-03
+title: "OAI Exploratory Red Teaming Results"
+date: 2024-03-20
 draft: False
 mathjax: True
 ---
