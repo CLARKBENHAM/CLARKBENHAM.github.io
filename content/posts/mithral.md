@@ -1,10 +1,12 @@
 
 ---
-title: "Mithral: Usefully Faster Matrix Mults by Approximation?"
+title: "[koans] Mithral: Usefully Faster Matrix Mults by Approximation?"
 date: 2024-03-25T13:46:24-07:00
 draft: True
 mathjax: true
 ---
+
+The compressed text outline is LLM expandable.
 
 	How Mithral Works
 		Insert diagram of data access
@@ -39,15 +41,16 @@ mathjax: true
 					But we could keep the spectral norm and be incorrect, outputing [2,2,4]
 				So this is problem unitarily equivalent to the frobenious norm?
 
-		Only on test set? (Double check accuracy numbers)
-
 		Works best when: For matricies X (N,D) and Q (D,m) Mithral is optimized for  N > D,M. It also works better when X changes and Q is fixed
 
 		By R^2 for random matricies, does okay. But great on data matching expected distribution
+			Pre-quantized data can be computed exactly: eg. all entries are ints in [0,16]
 
 	Existing bugs in the code
+		Python version tested for correctness, C++ version tested for speed but implementations not the same.
+			speed test with and without changes showed only minor variation, bugs did not cause speedup
 		link to gitissues?
-		TODO: speed test with and without changes
+
 
 	My Multi-monitor setup and things learned
 		debugging in docker
