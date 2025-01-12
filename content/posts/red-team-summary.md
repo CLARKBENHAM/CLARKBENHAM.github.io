@@ -1,5 +1,5 @@
 ---
-title: "OAI Red Teaming Results"
+title: "Open AI LLM's: Attacks and Test-set filtering"
 date: 2024-03-20
 draft: False
 mathjax: True
