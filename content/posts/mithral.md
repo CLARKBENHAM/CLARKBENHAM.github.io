@@ -1,15 +1,17 @@
 
 ---
-title: "[koans] Mithral: Usefully Faster Matrix Mults by Approximation?"
+title: "[koans] Bolt: Usefully Faster Matrix Mults by Approximation"
 date: 2024-03-25T13:46:24-07:00
 draft: False
 mathjax: true
 ---
 
+This [project](https://github.com/CLARKBENHAM/bolt) used the [Bolt algo] (https://arxiv.org/abs/2106.10860), fixed the C++ implementation, and wrote Python bindings to be usefully faster than the default numpy matrix multiplications. It can be 10-20x faster with 0.1-2% L2 norm error.
+
 The compressed text outline is LLM expandable.
 
 	How Mithral Works
-		Insert diagram of data access
+        Data access [pattern](https://github.com/dblalock/bolt/blob/master/assets/blalock-maddness-poster.png) 
 
 		OPQ but with:
 			Bolt Increases the number of subspaces: more expressive with the same runtime
@@ -39,7 +41,7 @@ The compressed text outline is LLM expandable.
 				Here we're trying not to change the vector associated with the old maximum Singular Value.
 					We can change the spectral norm, eg. outputing [2,1,1] instead of [4,2,2] would still be correct for classification.
 					But we could keep the spectral norm and be incorrect, outputing [2,2,4]
-				So this is problem unitarily equivalent to the frobenious norm?
+				So this is problem unitarily equivalent to the frobenious norm
 
 		Works best when: For matricies X (N,D) and Q (D,m) Mithral is optimized for  N > D,M. It also works better when X changes and Q is fixed
 
@@ -49,12 +51,14 @@ The compressed text outline is LLM expandable.
 	Existing bugs in the code
 		Python version tested for correctness, C++ version tested for speed but implementations not the same.
 			speed test with and without changes showed only minor variation, bugs did not cause speedup
-		link to gitissues?
 
 
 	My Multi-monitor setup and things learned
-		debugging in docker
-		vscode mutli-window
-		installing docker (just use Nvidia's provided Dockerfiles)
-		bazel builds
-		how pybind11 transfers data
+		debugging in docker: debugging requires system calls which aren't enabled by default in Docker. You need to run the container with: `docker run -it --rm --cap-add=SYS_PTRACE --security-opt seccomp=unconfined`
+            Build the C++ code in debug mode, set breakpoints in C++ vscode. For Python allow the debugger to step outside of your code. Run python, stop it at a breakpoint, attach gdb to the python process and then continue, the debugger can now step across languages.
+            See (.vscode/tasks.json)[https://github.com/CLARKBENHAM/bolt/blob/cb12d40af18eb47c3012af6d4fb5539e0408df8c/.vscode/launch.json#L11] to have this done without manual intervection, including re-building C++ code.
+		vscode mutli-window: use a single workspace config file but define it as multi-root.
+		installing built in docker: just use Nvidia's provided Dockerfiles and don't manully find compatable versions
+		bazel builds: set keywords to define which function to use for build. Can write a simple implementation and a complex implementation and via 1 word hotkey swap between.
+            Also bind build task to hotkey: 
+		pybind11: would rather transfer pointers than data, so must specify rules to change owner from C++ to Python. Serialization for various types is also not automatic due to format conversion. (Code)[https://github.com/CLARKBENHAM/bolt/blob/cb12d40af18eb47c3012af6d4fb5539e0408df8c/cpp/mithral_wrapped.cpp#L337] to return results and accept inital parameters.
