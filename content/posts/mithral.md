@@ -6,17 +6,17 @@ draft: False
 mathjax: true
 ---
 
-This [project](https://github.com/CLARKBENHAM/bolt) used the [Bolt algo] (https://arxiv.org/abs/2106.10860), fixed the C++ implementation, and wrote Python bindings to be usefully faster than the default numpy matrix multiplications. It can be 10-20x faster with 0.1-2% L2 norm error.
+This [project](https://github.com/CLARKBENHAM/bolt) used the [Bolt algo](https://arxiv.org/abs/2106.10860), fixed the C++ implementation, and wrote Python bindings to be usefully faster than the default numpy matrix multiplications. It can be 10-20x faster with 0.1-2% classification errors.
 
 The compressed text outline is LLM expandable.
 
 	How Mithral Works
-        Data access [pattern](https://github.com/dblalock/bolt/blob/master/assets/blalock-maddness-poster.png) 
+        Data access pattern: https://github.com/dblalock/bolt/blob/master/assets/blalock-maddness-poster.png
 
-		OPQ but with:
+		Optimized Product Quantization but:
 			Bolt Increases the number of subspaces: more expressive with the same runtime
 
-			smaller LUTs so fit in SIMD not L1
+			Smaller LUTs so fit in SIMD not L1
 				linearly approximate and rescale to get correct answer
 			They quickly sum 8-bit ints by averaging pairs of values in a tree structure. (if you summed the ints and then divided you'd have to cast to 16 bit first)
 
@@ -32,16 +32,20 @@ The compressed text outline is LLM expandable.
 
 	What the paper shows
 		Only on last layer of Model
-		Where the previous classification output was correct, is it still correct?
+		Where the previous classification output was correct, is it still correct? Argmax not L2-norm
 			asking: does it preserve the argmax of output vector, but biased since correct answers more likely to have large seperation.
-			TODO: check correlation of error with absolute seperation
+			There is Moderate correlation of error with absolute seperation
 			For a general matrix multiplication you're concerned with the magnitude of all outputs remaining similar.
-				But Mirsky showed that SVD minimizes any reconstruction Norm that's the result of a Unitary Transform.
-				The Frobenious norm is a unitary transformation of the spectral norm.
-				Here we're trying not to change the vector associated with the old maximum Singular Value.
-					We can change the spectral norm, eg. outputing [2,1,1] instead of [4,2,2] would still be correct for classification.
-					But we could keep the spectral norm and be incorrect, outputing [2,2,4]
-				So this is problem unitarily equivalent to the frobenious norm
+				Eckart–Young–Mirsky shows that no rank-k reconstruction minimizies any Unitarily Invariant norm better than SVD.
+                    The Frobenious norm is a unitary transformation of the spectral norm.
+                But here we minimize the number of bits for each entry, not the rank as a whole.
+                If the input only ever had`2**(num hash steps)` distinct numbers in each subspace BOLT would be a perfect approximation: they would be computed beforehand, and the hash function would learn to return them.
+                
+				And classification is not a unitary norm. 
+                    Here we're trying not to change the eigen vector associated with the old maximum Singular Value.
+					    We can change the spectral norm, eg. outputing [2,1,1] instead of [4,2,2] would still be correct for classification.
+					    But we could keep the spectral norm and be incorrect, outputing [2,2,4]
+                    A norm can't measure "distance" from a non-zerovector; by definition ||x||=0 iff x=0
 
 		Works best when: For matricies X (N,D) and Q (D,m) Mithral is optimized for  N > D,M. It also works better when X changes and Q is fixed
 
