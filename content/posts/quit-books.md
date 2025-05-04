@@ -17,6 +17,7 @@ I then labeled each book for enjoyment and overall usefulnes. I found:
 2. On average each "Literature" book, something I would not normally read but did for self improvement was more enjoyable and useful than regular fiction, but less so than general non-fiction, businees writing, and especially than Computer Science, Math, and ML textbooks.
 2b. I'd attribute the larger enjoyment to defering my picks to more knolwedgable readers for Literature than for fiction.
 2c. I don't put enough effort into books I assume don't deserve it. The Math book I got the most value out of per hour was probably LADR where I solved every problem, a book I'd just read through wouldn't have been as impactful.
+3. I am not able to draw clear morals from books. The books I which have the most influence on my moral outlook are CS Lewis's Abolition of Man, Screwtape letters, and The Great Divorce,  and Unsong by Scott Alexander. The first 3 are all explicit essays and where far more impactful than his Hideous Strength Trilogy which I'd have taken nothing from if I hadnot already read his books. The 4th I read at the same time as his essays talking exactly about the point of the book so I didn't have an extra deduction to do. I would still rank these below The Last Psychiatrist's blogging and at one point in time EA. Only by direct essays can I understand the world.
 
 Here are the distributions of ratings out of 5:
 <img src="/images/book-enjoyment-distribution.jpg">
