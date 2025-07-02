@@ -10,7 +10,8 @@ the US probably never had the ability to do a unilateral first strike:
 
 2b. Soviets test first atomic bomb in Aug 1949.
 3. So US possibly could've nuked USSR in Early-Mid 1949 without retaliation, though balance of B-36s vs MiG-15 unclear.
-4. But the US doesn't have enough bombs to cripple USSR. Only ~50 in June 1948, 170 in June 1949, and 300 in 1950. TROJAN plan in dec 48 called for 130, OFFTACKLE in Dec 49 called for 292. But Harmon's May 1949 committee reported  "even if all precisely hit their targets, the USSR would not surrender, its leadership would not be seriously weakened, and its military could still operate".
+4. But the US doesn't have enough bombs to cripple USSR. Only 7-13 in Nov 47, ~50 in June 1948, 170 in June 1949, 300 by June 30 1950, 400 by Jan 1 1951, 1k in early 1953.
+	TROJAN plan in dec 48 called for 130 (causing 6 million deaths), OFFTACKLE in Dec 49 called for 292. But Harmon's May 1949 committee reported  "even if all precisely hit their targets, the USSR would not surrender, its leadership would not be seriously weakened, and its military could still operate".
 
 So actually atomic bombs with propeller driven bomber planes still favor a defensive posture:
 1. They likely could've been shoot down by jet fighters
@@ -22,6 +23,10 @@ This changes with Hydrogen Bombs and Jet Bombers.
 2. But USSR air defense SA-1 was tested against 20 simultaneous targets in 1954 around Moscow. SA-2 shoots down U-2 in may 1960.
 3. Total US Stockpile 2400 in 1955. Ivy Mike on Nov 1 1952 but first combat weapon is EC-17 with 5 built from mar-oct 1954 and Mark-17 with 200 built from Jul 1954 - Nov 1955.
 4. Total Russian Stockpile is 5 in 1950 and 200 in 1955. First weapon-ready 1.6MT hydrogen bomb is RDS-37 tested Nov 1955, but 400kt bomb tested in aug 1953.
+
+Projected Soviet Deaths go from 13m to 150million when switch is made to Hydrogen bombs since same targeting plan is kept, just bigger bombs used:
+	 "a few million deaths, then ten million, then up to thirteen million or so by 1955. But from that year to the next, 1956, there was a sudden tenfold jump in the estimates—an order-of-magnitude increase, as RAND analysts would put it—to a hundred and fifty million Soviet dead. By 1961, as I had already learned, the JCS forecast was for more than two hundred million in the Soviet bloc alone. "
+	Goes from deterrance (and why soviets don't run over Europe after WW2: 'The news [of Hiroshima] had an acutely depressing effect on everybody. It was clearly realized that this was a New Fact in the world’s power politics, that the bomb constituted a threat to Russia, and some Russian pessimists I talked to that day dismally remarked that Russia’s desperately hard victory over Germany was now “as good as wasted.”'), to striking their military capabilities, to stoping them from striking the US.
 
 So ability of US first strike depends on quality of USSR command and control system or their ability to respond? Or do they not have enough rocket interceptors anyway?
 
@@ -45,10 +50,27 @@ US thought "twenty to forty Soviet ICBMs ominously enhanced the possibilities of
 	and "silo-based ICBMs (of which the Soviets had none in 1961, but were expected shortly to have hundreds to thousands)"
 Soviets actually only have 2 in
 
+Soviets need 300 ICBMs for complete first strike abilities: "The key projection was when the Soviets would or might have 300 or more. That was generally agreed to be the number that would allow coverage by missiles alone of all SAC bases in the United States and abroad as well as our soft ICBM sites".
+	But laters theres's "Aside from our theater forces, they would also be hit by Polaris missiles and carrier forces at sea, and surviving Atlas and Titan missiles.", so in Oct 1962 50-100 still way too low for soviets.
+So this is the missle gap after which point all previous investment can be taken out in first strike. The arms race accelerates again but now there's no benifit and is stable again? "The last year in which U.S. retaliation to a Soviet first strike would depend entirely on “soft” air bases and missile sites, subject to destruction by two hundred to three hundred Soviet ICBMs, was 1962. After that, thousands of Soviet ICBMs would be needed for high assurance of destroying in a first strike the large number of hardened ICBM silos the United States was programming (aside from U.S. submarine-launched Polaris missiles). In other words, 1962 was the last" year
+
+Sept 1961 when we have photographs of only 4 ICBMs locations, and the empty lots where we suspected others.
+But in 1960 people had suspected there wouldn't be a missile gap.
+ "It was true that the lowest estimate, aside from the purportedly aberrant one by the Army and Navy, showed no significant gap—fifty Soviet ICBMs to our forty—but the majority opinion in the intelligence community was estimating a missile gap in favor of the Soviets as late as the June 7 NIE, a few days after the Vienna summit"
+
+Soviet First Strike could've happened in "The 1959–62 period was their only opportunity to have such a disarming capability with missiles, either for blackmail purposes or an actual attack. After that, we were programmed to have increasing numbers of Atlas and Minuteman missiles in hard silos and Polaris sub-launched missiles."
+	but they chose not to build up their ICBM arsenal. And didn't even have theres below ground.
+USSR built many medium and intermediate range missles, could totally crater West Germany, but not harm the US.
+So never was a deterrence gap either.
+	"that buildup, which did begin in 1963–64 (particularly after Khrushchev was replaced by Brezhnev), could never promise the Soviets the strategic advantages it might have offered in 1958–62."
+
+
+" in days when it was assumed by our military that either side could “accept” tens of millions of deaths, though not hundreds of millions."
+
 
 US Nuclear powered submarine sea trials start in Jan 1955, Soviet military has them deployed 1958. First US nuclear armed ballistic missile submarines patrolled Nov 1960-Jan 1961. First Soviet nuclear missile armed nuclear powered sub with 3 missiles was in Nov 1960, first with 16 missiles entered service in 1967 when US has 41 deployed. 70% of modern nuclear warheads in the USA are carried by ballistic missile submarines. So is this when 2nd strike abilities are sufficient that no one will ever try anything?
 
-Bombers can be recalled for hours, but US Ballistic Missile Early Warning System (BMEWS) needed decisions in less than 15 min.
+Bombers can be recalled for hours, but US Ballistic Missile Early Warning System (BMEWS) needed decisions in less than 15 min. (Though see relative risks)
 
 
 #Going through these numbers make it obvious it's the MIRV and our failure to arms control that that has made proliferation much less stable. Also threats of nuclear armed torpedos. While "Golden Dome" may prove effective enough.
@@ -85,3 +107,35 @@ Bases don't even get centralized info quickly: "the reports of command post exer
 
 
 Polaris missiles are great for deterrence: impossible to stop or sink subs, but because those missiles have small warheads and before GPS are inaccurate they're only good for targeting cities not first strike capabilities against soviet silos. So if US wants "massive retaliation" Navy gets boost but if its "counterforce" than massive bombers or smaller land missiles against soviet silos then there's the advantage".
+Navy to 2nd strike cities and deter, if Soviet command and control good enough; Air Force to bomb before takeoff. This also changes how much they want to invest in making their missiles more accurate.
+LeMay wanted 10k minutemen land based ICBMs, in part since not accurate enough.
+Also Polaris is the first time you have a Nuke it'd even be worthwhile to keep in reserve: only targets cities so worth keeping as delayed threat.
+
+Stragegy of shift to flexible response:
+From single strike to massive deterance to counterforce to being able to iterate forward along war or back away from brink once started.
+But Ellesberg wants to be ablt to deter, prevent, and avoid war since clearly counterforce won't work.
+Also is it counterforce as in we've blown up their silos or is it counterforce in that we've only targeted military installations and so have threat of destroying their cities next so gotta keep cities in reserve.
+	But in the first case you want to blow up command and control centers so they can't send out more commands and are disrupted, in the 2nd need USSR to keep a firm grip. Can't kill their command center to paralyze them from sending out more bombs, and save their command center so they don't order more bombs out.
+		But soviet doomsday machine: ICBMs beep "Go" code to silos as they fly over, wasn't disclosed to the US. And the idea of fighting war by decapitation strike doesn't work why authority is further delegated.
+"We would have to announce that intention long before hostilities began. Right away, this would be a marked departure from a policy of indicating beforehand and then carrying out our intent to destroy cities in all circumstances, a policy that removed any restraint on the enemy from targeting our own cities. Second, it required maintaining protected and controlled U.S. reserve forces under virtually all circumstances, thus preserving a threat capability in order to terminate the war. That might also deter enemy preparations to destroy our cities as an inevitable and automatic wartime strategy. Third, it called for preserving on both sides a command and control system capable of both controlling reserve forces and terminating operations. We would need a survivable command system capable of more than a simple “Go” decision; and we could not afford to deprive the Soviets62 of the same capability."
+"This combination of damage-limiting and war-terminating goals implied that there were some choices to be made by the highest surviving U.S. authority even after general war hostilities had begun."
+
+Real advantage is that if president has options during the war he'll want to be kept informed before it, if there's only a Go-No Go choice then he won't look into it.
+	" a second, more important, advantage in demanding that a highest civilian authority be able to choose among options even in the midst of war. It provided a rationale—a “need to know”—for the president to inform himself and his civilian advisors before the war of the detailed nature of the proposed war planning."
+Also They'll start adding locks to weapons since president will now be expected to have enough control during wartime and won't delegate authority.
+
+"the major purpose of U.S. strategic weapons since the early fifties: to deter, with confidence, Soviet second-use retaliation to U.S. first use of tactical weapons against Soviet forces or their allies, by threatening that if the Soviets made a nuclear response in kind with its own tactical weapons SAC might escalate to a full first strike against the Soviet Union."
+That's why you have so many to destroy the world, when you could destroy the nation with 20: 20 stops them from launching nukes it doesn't stop them from attacking you. By being able to destory world you've added another step on escalation ladder and the fear of getting to the last one lets them let you go 1 higher right before it.
+
+# So political command structure was at riskiest from 1955ish to 1965ish? That's when few safegaurds, low level commanders had authority, only options were kill 400million people or not.
+"General War" was "defined as Armed conflict with the Soviet Union" so any shooting immediatly bubbles over.
+Technically/Hardware limits: Before 1950 you'd only have bombings with at most 4x tonnage of nazi in ww2 and many could be stopped by fighters.
+By 1955 you have bomberforce that can likely get there (though look into air defences) with Hydrogen Bombs.
+By 1960 it's kill everyone. The 1961 Plan in terms of Sino-Soviet deaths has 275 million would die in the first few hours of our attacks and 325 million would be dead within six months. 100Million Die in Easter Europe as planes bomb submarine pens and radar installations for passing further into USSR. 100M Allied Europeans could also die from fallout.
+If US Strikes first and execute their planned missions. So they expect that Air Defenses won't work (but actually they might? Plan calls for bombing Radar Installations as fly inland.)
+600M civillians dead from US first strike from blast and fallout, not from firestorms which could double that total. And firestorms could loft millions of tons into upper atmosphere which cause Nuclear Winter
+Even in best case 100M more Europeans will die from Soviet Response, and at time CIA estimated 100 ICBMs could be launched at US.
+And this was basically only plan, not that there'd be an early strike which focused on military.
+
+
+
