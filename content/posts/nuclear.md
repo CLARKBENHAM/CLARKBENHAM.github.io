@@ -163,3 +163,48 @@ Even in best case 100M more Europeans will die from Soviet Response, and at time
 And this was basically only plan, not that there'd be an early strike which focused on military.
 
 
+
+Was Hiroshima and/or Nagasaki Justified?
+Hiroshima nuked at 08:15 on Aug 6.
+They know it's a nuke on Aug 7 at 00:15 from Truman and during the day from Physcists looking at wreakage.
+Tokyo learned of Soviet invasion on 04:00 Aug 9.
+Nagasaki nuked 11:02 on Aug 9.
+At 10:30 Aug 9 meeting some are aruging for surrendor, but Supreme Council still split.
+
+Full War Council meets from 14:30-17:30 on Aug 9 while still placing their conditions for surrendor.
+
+Another meeting commenced at 23:50, still a debate. Hirohito finally asked at 02:00 and he says surrendor. Japanese say they'll surrendor with 1 condition: they keep emperor on early Aug 10. Aug 12 allies counterpropose.
+On and After Aug 11 no more B-29 firebombing raids, 13 they send leaflets urging surrendor, 14th is biggest bombing raid of war since they assume Japanese coding messages mean no surrender. Aug 14 3:49 Japanese time DC gets their surrender message but bombing raid goes on.
+
+Had to be unanimous amoung 6 of Supreme Council, or only if they prove unable to govern themselves would they submit decision to Emperor.
+	So his private wishes don't matter yet?
+	But 2/6 + empreror already wanted to surrender unconditionally after Hiroshima.
+
+In Aug 15 surrender address Hirohito mentions Nuke but not Soviets, on Aug 17 to "Soldiers and Sailors" it's no Nuke but yes to Soviet invasion.
+He's mostly concerned with preserving the "kokutai" way of life/Imperial Throne. "the uniqueness of the Japanese polity as issuing from a leader of divine origin"
+
+But from https://nsarchive.gwu.edu/document/28492-document-67a-cabinet-meeting-and-togos-meeting-emperor-august-7-8-1945
+on Aug 8 Forign minister gets audience with Emperer who agrees to surrendor on Postdam.  They agree to get full council to meet the next day.
+
+So if Nagasaki had been delayed a little longer than possibly would've been avoided?
+# Depends on if Toyoda would've been swayed by Emperor/how many on cabinet have to agree to surrender without conditions. #
+	Question of the psychology of men under duress who didn't move speedily after first bomb, but based on their earlier statements they might've surrenderd and this been unnessisary.
+
+
+"No consensus had emerged by 02:00 on 10 August, but the emperor gave his "sacred decision",[239] authorizing the Foreign Minister, Shigenori Tōgō, to notify the Allies that Japan would accept their terms on one condition, that the declaration "does not comprise any demand which prejudices the prerogatives of His Majesty as a Sovereign ruler."[240]
+
+
+"Therefore, many Japanese and in particular the military members of the government refused to believe the United States had built an atomic bomb, and the Japanese military ordered their own independent tests to determine the cause of Hiroshima's destruction.[86] Admiral Soemu Toyoda, the Chief of the Naval General Staff, argued that even if the United States had made one, they could not have many more.[87] American strategists, having anticipated a reaction like Toyoda's, planned to drop a second bomb shortly after the first, to convince the Japanese that the U.S. had a large supply.[49][88]"
+
+"In the afternoon of August 7, the Emperor reportedly told Kido, "I don't care what happens to me personally. We should lose no time in ending the war so as not to have another such tragedy."[89] On the afternoon of August 8, Foreign Minister Shigenori Tōgō met with the Emperor, who, citing the atomic bomb, stated the war must come to an end.[90][91] Per the Emperor's wishes, Tōgō met Prime Minister Kantarō Suzuki and proposed a meeting between the Supreme War Council.[92][91] Later that night, Suzuki told the chief cabinet secretary Hisatsune Sakomizu, "Now that we know it was an atomic bomb that was dropped on Hiroshima, I will give my views on the termination of the war at tomorrow's cabinet meeting."
+
+"The Supreme Council met at 10:30. Suzuki, who had just come from a meeting with the Emperor, said it was impossible to continue the war. Tōgō said that they could accept the terms of the Potsdam Declaration, but they needed a guarantee of the Emperor's position. Navy Minister Yonai said that they had to make some diplomatic proposal—they could no longer afford to wait for better circumstances."
+"In the middle of the meeting, shortly after 11:00, news arrived that Nagasaki, on the west coast of Kyūshū, had been hit by a second atomic bomb"
+	(So they learn of this nuclear attack much faster, basically as soon as it happened.)
+
+"The military faction was actively blocking any surrender discussions until August 9th. The army refused to discuss surrender at a meeting called soon after the Hiroshima bombing. The atomic bombings had "little or no impact on the Army's position." Atomic Bombing Of Hiroshima and Nagasaki Even when they finally met on August 9th, they deadlocked 3-3 and only reached a decision after the Emperor's intervention."
+
+Is this a case of military just being slow to change their minds? They have facts from 11am but take till 2am next day give surrenter with 1 condition.
+Aug 13 to transmit.
+
+
