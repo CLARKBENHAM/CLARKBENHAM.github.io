@@ -4,38 +4,63 @@ date: 2025-07-02
 draft: True
 mathjax: True
 ---
-the US probably never had the ability to do a unilateral first strike:
+The US probably never had the ability to do a unilateral first strike against the Soviets:
 1. B-29 doesn't have the range. First true intercontinental bomber is the B-36, with 22 planes delivered in Feb 1949, ~100 by EOY.
 2. Jet MiG-15 make propeller-driven B-36 obsolete. MiG-15 first production plane flew Dec 31 1948, start full manufacture in march 1949, and 729 total are built in 1949. (And USSR can only build MiG-15 because UK sells engine blueprints. 'Stalin is said to have replied, "What fool will sell us his secrets?". To Stalin's amazement, the British Labour government and its Minister of Trade, Sir Stafford Cripps, were perfectly willing to provide technical information and a license to manufacture the Rolls-Royce Nene.')
-
 2b. Soviets test first atomic bomb in Aug 1949.
 3. So US possibly could've nuked USSR in Early-Mid 1949 without retaliation, though balance of B-36s vs MiG-15 unclear.
 4. But the US doesn't have enough bombs to cripple USSR. Only 7-13 in Nov 47, ~50 in June 1948, 170 in June 1949, 300 by June 30 1950, 400 by Jan 1 1951, 1k in early 1953.
-	TROJAN plan in dec 48 called for 130 (causing 6 million deaths), OFFTACKLE in Dec 49 called for 292. But Harmon's May 1949 committee reported  "even if all precisely hit their targets, the USSR would not surrender, its leadership would not be seriously weakened, and its military could still operate".
+4b. The TROJAN plan in dec 48 called for 130 (causing 6 million deaths), OFFTACKLE in Dec 49 called for 292. But Harmon's May 1949 committee reported  "even if all precisely hit their targets, the USSR would not surrender, its leadership would not be seriously weakened, and its military could still operate".
+5. Total casualties are small: (under-) projections of "a few million deaths, then ten million, then up to thirteen million or so by 1955"
+4b. 100 25kt Trinity qualty bombs is 4x the 750kt total explosives dropped by Nazi's on Soviet Union or 63x the 40kt dropped during The Blitz which killed 40-43k.
 
 So actually atomic bombs with propeller driven bomber planes still favor a defensive posture:
 1. They likely could've been shoot down by jet fighters
 2. They require a large preparation time which prevents surprise attacks. "The Central Intelligence Agency believed that it could warn of a surprise Soviet attack days or even weeks ahead of time because of the necessary preparation time"
-3. They require massive investments in bomber fleet to deliver: "up to 30 days would be needed to deliver all Soviet weapons. "
+3. They require massive investments in bomber fleet to deliver: "up to 30 days would be needed to deliver all Soviet weapons", though the US's more capable force could deliver more in 1 blow.
 
 This changes with Hydrogen Bombs and Jet Bombers.
 1. The US jet bomber B-52 is operational in 1955.
-2. But USSR air defense SA-1 was tested against 20 simultaneous targets in 1954 around Moscow. SA-2 shoots down U-2 in may 1960.
+2. The USSR air defense SA-1 was tested against 20 simultaneous targets in 1954 around Moscow. The SA-2 shoots down U-2 in may 1960. But throughout US Military assumes USSR air defences will not be a large problem. I don't know why. Stalin wanted Moscow gaurded against a "1,000 bomber strike".
 3. Total US Stockpile 2400 in 1955. Ivy Mike on Nov 1 1952 but first combat weapon is EC-17 with 5 built from mar-oct 1954 and Mark-17 with 200 built from Jul 1954 - Nov 1955.
 4. Total Russian Stockpile is 5 in 1950 and 200 in 1955. First weapon-ready 1.6MT hydrogen bomb is RDS-37 tested Nov 1955, but 400kt bomb tested in aug 1953.
+5. "1956 [...] A hundred and fifty million Soviet dead. By 1961, as I had already learned, the JCS forecast was for more than two hundred million in the Soviet bloc alone."
+5b. Projected casualties get much higher because the same targeting plan is kept, but much bigger bombs are used.
+5c. So 1958ish is when Global "omnicide" is possible, definitly by 1961.
+5c1. "In 1961 there were about seventeen hundred SAC bombers, including over six hundred B-52s and a thousand B-47s. In the bomb bays of the SAC planes were thermonuclear bombs much larger than those I had seen in Okinawa. Many were from five to twenty-five megatons in yield."
 
-Projected Soviet Deaths go from 13m to 150million when switch is made to Hydrogen bombs since same targeting plan is kept, just bigger bombs used:
-	 "a few million deaths, then ten million, then up to thirteen million or so by 1955. But from that year to the next, 1956, there was a sudden tenfold jump in the estimates—an order-of-magnitude increase, as RAND analysts would put it—to a hundred and fifty million Soviet dead. By 1961, as I had already learned, the JCS forecast was for more than two hundred million in the Soviet bloc alone. "
-	Goes from deterrance (and why soviets don't run over Europe after WW2: 'The news [of Hiroshima] had an acutely depressing effect on everybody. It was clearly realized that this was a New Fact in the world’s power politics, that the bomb constituted a threat to Russia, and some Russian pessimists I talked to that day dismally remarked that Russia’s desperately hard victory over Germany was now “as good as wasted.”'), to striking their military capabilities, to stoping them from striking the US.
 
 So ability of US first strike depends on quality of USSR command and control system or their ability to respond? Or do they not have enough rocket interceptors anyway?
 
 
+Tactical Nuclear Weapons:
+1. But by 1961 the US also has 1k figher bombers armed with H-bombs within range of China and USSR. " SAC planners had regarded these tactical theater forces as so vulnerable, unreliable, and insignificant a factor in all-out nuclear war that they had not even bothered to include them in calculating the outcome of attacks in a general war.
+1b.
+
+
+
+Ordering of Bombs War Goals:
+Goes from why soviets don't run over Europe after WW2
+	'The news [of Hiroshima] had an acutely depressing effect on everybody. It was clearly realized that this was a New Fact in the world’s power politics, that the bomb constituted a threat to Russia, and some Russian pessimists I talked to that day dismally remarked that Russia’s desperately hard victory over Germany was now “as good as wasted.”'
+to striking their military capabilities
+to stoping them from striking the US.
+to stragegic bombing which is meant to stop retaliation against tactical US usage.
+
+But there's a difference in crippling Soviets with a first strike and a deterrence level 2nd strike, which US thinks is "assured second-strike capability to kill more than the twenty million Soviet citizens who had died in World War II"
+
+
+"the major purpose of U.S. strategic weapons since the early fifties: to deter, with confidence, Soviet second-use retaliation to U.S. first use of tactical weapons against Soviet forces or their allies, by threatening that if the Soviets made a nuclear response in kind with its own tactical weapons SAC might escalate to a full first strike against the Soviet Union."
+	That's why you have so many to destroy the world, when you could destroy the nation with 20: 20 stops them from launching nukes it doesn't stop them from attacking you. By being able to destory world you've added another step on escalation ladder and the fear of getting to the last one lets them let you go 1 higher right before it.
+
 
 LeMay wanted a single all out blitz where "his more than one thousand bomber crews as of 1954 could deliver 750 bombs in a few hours, while the USSR might need one month to deliver its 150 bombs."
-And "In a 1956 speech to the National War College, LeMay said that if SAC was ordered to use its full nuclear arsenal against the USSR, "Between sunset tonight and sunrise tomorrow morning the Soviet Union would likely cease to be a major military power or even a major nation", while the USSR could not yet do the same to the US but was building the necessary arsenal" Is he just talking or were there credible reports he's right here? What specific data is there to backup what he's talking about?
+And "In a 1956 speech to the National War College, LeMay said that if SAC was ordered to use its full nuclear arsenal against the USSR, "Between sunset tonight and sunrise tomorrow morning the Soviet Union would likely cease to be a major military power or even a major nation", while the USSR could not yet do the same to the US but was building the necessary arsenal"
+	Is he just talking or were there credible reports he's right here? What specific data is there to backup what he's talking about?
 
 But there's a difference in crippling them with first strike and a deterrence level 2nd strike, which US thinks is "assured second-strike capability to kill more than the twenty million Soviet citizens who had died in World War II"
+
+
+
 
 
 But by 1961 the US also has 1k figher bombers armed with H-bombs within range of China and USSR. " SAC planners had regarded these tactical theater forces as so vulnerable, unreliable, and insignificant a factor in all-out nuclear war that they had not even bothered to include them in calculating the outcome of attacks in a general war.
@@ -48,7 +73,7 @@ Soviet test in Aug 26 1957
 American test Nov 1958
 US thought "twenty to forty Soviet ICBMs ominously enhanced the possibilities of a disarming surprise attack. And thirty ICBMs were the lowest near-term estimate for Soviet missiles in the more recent RAND studies. The estimates by the Air Force and CIA of near-term Soviet ICBM forces looked toward several hundred, perhaps as early as 1959 (with a crash effort), almost certainly by 1960–61, with thousands in the sixties."
 	and "silo-based ICBMs (of which the Soviets had none in 1961, but were expected shortly to have hundreds to thousands)"
-Soviets actually only have 2 in
+Sept 1961 when we have photographs of only 4 ICBMs locations, and the empty lots where we suspected others. All which are in same site and could've been destroyed by a blast within a few miles.
 
 Soviets need 300 ICBMs for complete first strike abilities: "The key projection was when the Soviets would or might have 300 or more. That was generally agreed to be the number that would allow coverage by missiles alone of all SAC bases in the United States and abroad as well as our soft ICBM sites".
 	But laters theres's "Aside from our theater forces, they would also be hit by Polaris missiles and carrier forces at sea, and surviving Atlas and Titan missiles.", so in Oct 1962 50-100 still way too low for soviets.
@@ -136,6 +161,5 @@ If US Strikes first and execute their planned missions. So they expect that Air 
 600M civillians dead from US first strike from blast and fallout, not from firestorms which could double that total. And firestorms could loft millions of tons into upper atmosphere which cause Nuclear Winter
 Even in best case 100M more Europeans will die from Soviet Response, and at time CIA estimated 100 ICBMs could be launched at US.
 And this was basically only plan, not that there'd be an early strike which focused on military.
-
 
 
